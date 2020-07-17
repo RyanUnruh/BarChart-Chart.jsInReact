@@ -33,6 +33,34 @@ class Chart extends Component {
             },
           }}
         />    
+        <Line
+          data={this.state.chartData}
+          options={{
+            title: {
+              display: this.props.displayTitle,
+              text: 'Rain Fall in '+this.props.location,
+              fontSize: 18,
+            },
+            legend: {
+              display: this.props.displayLegend,
+              position: this.props.legendPosition,
+            },
+          }}
+        />    
+        <Pie
+          data={this.state.chartData}
+          options={{
+            title: {
+              display: this.props.displayTitle,
+              text: 'Rain Fall in '+this.props.location,
+              fontSize: 18,
+            },
+            legend: {
+              display: this.props.displayLegend,
+              position: this.props.legendPosition,
+            },
+          }}
+        />    
       </div>
     );
   }
