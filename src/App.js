@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Chart from "./Chart";
 import "./App.css";
 
 class App extends Component {
@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <div className="container">
         <div className="col-xs-5 title-container">
-          <Titles />
+          
         </div>
         <div className="col-xs-7 form-container">
           <Chart
